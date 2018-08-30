@@ -43,12 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IStationInfosProvider.cs" />
+    <Compile Include="LineProvider.cs" />
+    <Compile Include="ILineProvider.cs" />
     <Compile Include="IMetroAPICall.cs" />
     <Compile Include="IStationsProvider.cs" />
+    <Compile Include="Line.cs" />
     <Compile Include="MetroAPICall.cs" />
-    <Compile Include="MetroMobilite.cs" />
+    <Compile Include="Mobilite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Station.cs" />
+    <Compile Include="StationInfo.cs" />
+    <Compile Include="StationInfosProvider.cs" />
     <Compile Include="StationsProvider.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroMobilite;
+using System;
 using System.Collections.Generic;
 
 namespace Transports
@@ -9,14 +10,15 @@ namespace Transports
         {
 
             int dist = 500;
-            MetroMobilite metro = new MetroMobilite();
+            Mobilite metro = new Mobilite();
 
-            List<Station> stations = metro.GetStationsByDist(dist);
+            Dictionary<string, StationInfo> stations = metro.GetStationInfos(dist);
 
-            foreach (Station station in stations)
+            foreach (StationInfo stationInfo in stations.Values)
             {
-                Console.WriteLine(station.ToString());
+                Console.WriteLine(stationInfo.ToString());
             }
+
             Console.ReadKey();
         }
     }

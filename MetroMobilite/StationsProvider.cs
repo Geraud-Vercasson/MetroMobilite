@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 
-namespace Transports
+namespace MetroMobilite
 {
     class StationsProvider : IStationsProvider
     {
@@ -52,6 +53,7 @@ namespace Transports
                         }
                     }
                 }
+                station.lines = station.lines.Distinct().ToList();
             }
             return stationsDict;
         }

@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace MetroMobilite
 {
-    public class Station
+    public class StationInfo
     {
         public string id { get; set; }
         public string name { get; set; }
         public double lon { get; set; }
         public double lat { get; set; }
-        public List<string> lines { get; set; }
+        public List<Line> lines { get; set; }
 
         override public string ToString()
         {
             string res = $"{name}\n({lat};{lon})\nLines:\n";
-            foreach(string line in lines)
+            foreach (Line line in lines)
             {
-                res += $"{line}\n";
+                res += $"{line.ToString()}\n";
             }
 
             return res;
         }
 
-        public Station(string id, string name, double lon, double lat, List<string> lines)
+        public StationInfo(string id, string name, double lon, double lat, List<Line> lines)
         {
             this.id = id;
             this.name = name;

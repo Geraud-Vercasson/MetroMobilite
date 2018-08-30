@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MetroMobilite
 {
-    internal interface IMetroAPICall
+    interface ILineProvider
     {
-        T Get<T>(string url);
+        Dictionary<string, Line> getLines(List<string> LineNames);
     }
 }

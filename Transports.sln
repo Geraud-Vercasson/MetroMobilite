@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroMobiliteTest", "Statio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroMobilite", "MetroMobilite\MetroMobilite.csproj", "{48D4D3A1-EE1E-4D57-BDB8-B15DEF218F3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroApp", "MetroApp\MetroApp.csproj", "{EC8ED7ED-7921-4C7E-9EF2-6491C52D7E0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{48D4D3A1-EE1E-4D57-BDB8-B15DEF218F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48D4D3A1-EE1E-4D57-BDB8-B15DEF218F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48D4D3A1-EE1E-4D57-BDB8-B15DEF218F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC8ED7ED-7921-4C7E-9EF2-6491C52D7E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8ED7ED-7921-4C7E-9EF2-6491C52D7E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8ED7ED-7921-4C7E-9EF2-6491C52D7E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8ED7ED-7921-4C7E-9EF2-6491C52D7E0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

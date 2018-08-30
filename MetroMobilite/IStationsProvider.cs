@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Transports
+namespace MetroMobilite
 {
     internal interface IStationsProvider
     {
