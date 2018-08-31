@@ -12,8 +12,8 @@
 
     <Grid Margin="0,0,0,10">
         <Grid HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="780">
-            <ListBox HorizontalAlignment="Left" Height="329" Margin="10,10,0,0" VerticalAlignment="Top" Width="376" ItemsSource="{Binding Stations}"
-                     SelectedItem="{Binding SelectedStation, Mode=TwoWay}">
+            <ListBox Name="StationsListBox"  HorizontalAlignment="Left" Height="329" Margin="10,10,0,0" VerticalAlignment="Top" Width="376" ItemsSource="{Binding Stations}"
+                     SelectedItem="{Binding SelectedStation, Mode=TwoWay}" SelectionChanged="StationsListBox_SelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding name}"/>
@@ -23,7 +23,14 @@
             <Button Content="Charger Les Stations"  HorizontalAlignment="Left" Margin="270,344,0,0" VerticalAlignment="Top" Width="116" RenderTransformOrigin="0.524,-0.715" Height="29" Command="{Binding }"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="135,349,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding dist}"/>
             <TextBlock HorizontalAlignment="Left" Margin="78,353,0,0" TextWrapping="Wrap" Text="Distance" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" Margin="495,49,0,0" TextWrapping="Wrap" Text="{Binding SelectedStation.name}" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="574,41,0,0" TextWrapping="Wrap" Text="{Binding SelectedStation.name}" VerticalAlignment="Top"/>
+            <ListBox HorizontalAlignment="Left" Height="271" Margin="406,69,0,0" VerticalAlignment="Top" Width="360" ItemsSource="{Binding SelectedStation.lines}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding longName}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
 
     </Grid>

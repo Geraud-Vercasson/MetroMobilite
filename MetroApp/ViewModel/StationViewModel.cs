@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Windows;
 using System.Windows.Input;
 using MetroMobilite;
 
@@ -24,7 +23,7 @@ namespace MetroApp.ViewModel
             dist = 500;
         }
 
-        public ObservableCollection<StationInfo> Stations{ get => _stations; set => _stations = value; }
+        public ObservableCollection<StationInfo> Stations { get => _stations; set => _stations = value; }
 
         public StationInfo SelectedStation { get; set; }
 

@@ -11,13 +11,10 @@ namespace MetroApp.Views
         {
             InitializeComponent();
         }
+
+        private void StationsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
-
-            //<ListBox HorizontalAlignment = "Left" Height="300" Margin="395,89,0,0" VerticalAlignment="Top" Width="375" ItemsSource="{Binding SelectedStation.lines}">
-            //    <ListBox.ItemTemplate>
-            //        <DataTemplate>
-            //            <TextBlock Text = "{Binding name}" />
-            //        </ DataTemplate >
-            //    </ ListBox.ItemTemplate >
-            //</ ListBox >
