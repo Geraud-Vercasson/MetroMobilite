@@ -5,21 +5,25 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MetroApp.Views"
       xmlns:ViewModel="clr-namespace:MetroApp.ViewModel"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800">
+      mc:Ignorable="d" d:DesignWidth="800" Height="404.218">
     <UserControl.DataContext>
         <ViewModel:StationViewModel/>
     </UserControl.DataContext>
 
-    <Grid>
-        <Grid HorizontalAlignment="Left" Height="430" Margin="10,10,0,0" VerticalAlignment="Top" Width="780">
-            <ListBox HorizontalAlignment="Left" Height="410" Margin="10,10,0,0" VerticalAlignment="Top" Width="376" ItemsSource="{Binding Stations}">
+    <Grid Margin="0,0,0,10">
+        <Grid HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="780">
+            <ListBox HorizontalAlignment="Left" Height="329" Margin="10,10,0,0" VerticalAlignment="Top" Width="376" ItemsSource="{Binding Stations}"
+                     SelectedItem="{Binding SelectedStation, Mode=TwoWay}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding name}"/>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
+            <Button Content="Charger Les Stations"  HorizontalAlignment="Left" Margin="270,344,0,0" VerticalAlignment="Top" Width="116" RenderTransformOrigin="0.524,-0.715" Height="29" Command="{Binding }"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="135,349,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding dist}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="78,353,0,0" TextWrapping="Wrap" Text="Distance" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="495,49,0,0" TextWrapping="Wrap" Text="{Binding SelectedStation.name}" VerticalAlignment="Top"/>
         </Grid>
 
     </Grid>

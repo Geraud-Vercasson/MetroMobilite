@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MetroMobilité" Height="450" Width="800">
     <Grid>
-        <views:StationsView x:Name="StationViewControl" ></views:StationsView>
+        <views:StationsView x:Name="StationViewControl" Margin="0,0,0,15" ></views:StationsView>
     </Grid>
 
 </Window>
